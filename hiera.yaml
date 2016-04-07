@@ -1,0 +1,10 @@
+---
+:backends:
+  - yaml
+:yaml:
+  :datadir: /etc/puppet/hieradata
+:hierarchy:
+  - "%{::init_env}/%{::init_role}"
+  - "%{::init_role}"
+  - "%{::init_env}"
+  - common
